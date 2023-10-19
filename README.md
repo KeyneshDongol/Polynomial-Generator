@@ -44,7 +44,7 @@ Both those groups have to contain several basis fucntions and therefore coeffici
 The structure above is implementedby making the mentioned object contain two objects: <br />
    -> "top" of type <br />
           sparseFunctionStruct<totalOrdertop = totalOrder - maxOrder, maxOrdertop = totalOrder - maxOrder , nVariablestop = nVariables -1> <br />
-               Notice how this object will be in charge of handling one less variable. The remaining variables can have a total order which is <br />
+               Notice how this object will be in charge of handling one less variable. The remaining variables can have a total order which is 
                the original one decreased by the order that the first variable has <br />
 and <br />
    -> "rest" of type <br />
