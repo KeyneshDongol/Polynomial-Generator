@@ -1,1 +1,2 @@
 # Polynomial-Generator
+This package is designed to generate polynomials of various forms during compile time by just giving the order and the dimensions of the polynomial. Here, we provided methods to substitute the polynomial and to find its roots. Originally hard-coded (as seen by the other github project) this provides the benefit of being flexible and since it's generated during run time, the package as a whole is faster. 
