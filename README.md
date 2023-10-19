@@ -17,11 +17,12 @@ f_0(x) = 1; f_1(x) = x; f_2(x) = x^2; f_3(x) = x^3;
 where the subscript is the order
 
 We can construct 2 variate basis functions as
-g_00(x,y) = f_0(x)*f_0(y)
-g_01(x,y) = f_0(x)*f_1(y);  g_10(x,y) = f_1(x)*f_0(y)
-g_02(x,y) = f_0(x)*f_2(y);  g_11(x,y) = f_1(x)*f_1(y);  g_20(x,y) = f_2(x)*f_0(y)
+$$
+g_00(x,y) = f_0(x)*f_0(y) &
+g_01(x,y) = f_0(x)*f_1(y);  g_10(x,y) = f_1(x)*f_0(y)&
+g_02(x,y) = f_0(x)*f_2(y);  g_11(x,y) = f_1(x)*f_1(y);  g_20(x,y) = f_2(x)*f_0(y) &
 etc
-
+$$
 We include all the basis functions up to a maximum total order is fixed.
 
 The object representing a discretised function has to contain all the coefficients for all the basis functions above.
