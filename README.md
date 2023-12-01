@@ -46,12 +46,12 @@ We split the basis functions with those characteristics into two groups:
 Both those groups have to contain several basis fucntions and therefore coefficients. They will be objects containing further objects
 
 The structure above is implementedby making the mentioned object contain two objects: <br />
-   -> "top" of type <br />
+*"top" of type <br />
           sparseFunctionStruct<totalOrdertop = totalOrder - maxOrder, maxOrdertop = totalOrder - maxOrder , nVariablestop = nVariables -1> <br />
                Notice how this object will be in charge of handling one less variable. The remaining variables can have a total order which is 
                the original one decreased by the order that the first variable has <br />
 and <br />
-   -> "rest" of type <br />
+* "rest" of type <br />
           sparseFunctionStruct<totalOrderrest = totalOrder , maxOrderrest = maxOrder - 1, nVariablesrest = nVariables> <br />
                This object instead will contain all the subobjects for which the first variable has at most order maxOrder - 1 <br />
 This nesting structure ends when the order of the last variable is determined. In that case the innermost object stores the value of the coefficient.
