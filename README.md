@@ -31,9 +31,9 @@ Let us suppose that we need to discretise a function of 3 variables with a maxim
 The top level will be of type
    sparseFunctionStruct<totalOrder = 2, maxOrder = 2, nVariables = 3, basisFunctType>    (notice that I will drop the last template parameter)
    
-Such object will contain all sub-objects for which 1) there are at least nVariables variables,
-                                                   2) the first variable has at most order maxOrder
-                                                   3) the total order is at most totalOrder
+Such object will contain all sub-objects for which 1. there are at least nVariables variables,
+                                                   2. the first variable has at most order maxOrder
+                                                   3. the total order is at most totalOrder
                                                    
 We split the basis functions with those characteristics into two groups:
    1) the ones where the first variable has an order of exactly maxOrder
