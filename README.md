@@ -13,14 +13,16 @@ We then construct basis functions for the multivariate case by taking products o
 a predetermined maximum total order.
 
 The simplest example is with polynomial basis functions. Let us assume that we use basis functions<br />
-f_0(x) = 1; f_1(x) = x; f_2(x) = x^2; f_3(x) = x^3 <br />
+```f_0(x) = 1; f_1(x) = x; f_2(x) = x^2; f_3(x) = x^3 <br />```
 where the subscript is the order
 
 We can construct 2 variate basis functions as <br />
+```
 g_00(x,y) = f_0(x)*f_0(y) <br />
 g_01(x,y) = f_0(x)*f_1(y);  g_10(x,y) = f_1(x)*f_0(y) <br />
 g_02(x,y) = f_0(x)*f_2(y);  g_11(x,y) = f_1(x)*f_1(y);  g_20(x,y) = f_2(x)*f_0(y)  <br />
 etc
+```
 
 We include all the basis functions up to a maximum total order is fixed.
 
@@ -36,8 +38,8 @@ Such object will contain all sub-objects for which 1. there are at least nVariab
                                                    3. the total order is at most totalOrder
                                                    
 We split the basis functions with those characteristics into two groups:
-   1) the ones where the first variable has an order of exactly maxOrder
-   2) and the ones where the first variable has an order of maxOrder-1 or lower
+   1. the ones where the first variable has an order of exactly maxOrder
+   2. and the ones where the first variable has an order of maxOrder-1 or lower
    
 Both those groups have to contain several basis fucntions and therefore coefficients. They will be objects containing further objects
 
