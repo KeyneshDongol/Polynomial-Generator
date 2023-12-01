@@ -13,14 +13,14 @@ We then construct basis functions for the multivariate case by taking products o
 a predetermined maximum total order.
 
 The simplest example is with polynomial basis functions. Let us assume that we use basis functions<br />
-```f_0(x) = 1; f_1(x) = x; f_2(x) = x^2; f_3(x) = x^3 <br />```
+```f_0(x) = 1; f_1(x) = x; f_2(x) = x^2; f_3(x) = x^3 ```
 where the subscript is the order
 
 We can construct 2 variate basis functions as <br />
 ```
-g_00(x,y) = f_0(x)*f_0(y) <br />
-g_01(x,y) = f_0(x)*f_1(y);  g_10(x,y) = f_1(x)*f_0(y) <br />
-g_02(x,y) = f_0(x)*f_2(y);  g_11(x,y) = f_1(x)*f_1(y);  g_20(x,y) = f_2(x)*f_0(y)  <br />
+g_00(x,y) = f_0(x)*f_0(y) 
+g_01(x,y) = f_0(x)*f_1(y);  g_10(x,y) = f_1(x)*f_0(y) 
+g_02(x,y) = f_0(x)*f_2(y);  g_11(x,y) = f_1(x)*f_1(y);  g_20(x,y) = f_2(x)*f_0(y)  
 etc
 ```
 
